@@ -1,0 +1,39 @@
+{%load static%}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'main/css/index.css' %}">
+    <script type="text/javascript" src="{% static 'main/js/clock.js' %}"></script>
+    <title>Document</title>
+</head>
+
+<body class="backgrd"; onload="clockTimer();">
+
+<div class="topbar">
+<div class="topbar_clock"><p  class="clock"><span id="clock"></span>     <span id="dayOfWeek"></span></p></div>
+
+<div class="topbar_block_button">
+
+            <a href="{%url 'index'%}"><button class="topbar_button">Инфокиоск</button></a>
+            <a href="https://www.oblgas.by"><button class="topbar_button">УП "Витебскоблгаз"</button></a>
+            <a href=""><button class="topbar_button">"Электронный каталог"</button></a>
+            <a href="https://www.gefest.by"><button class="topbar_button">Gefest</button></a>
+</div>
+    </div>
+
+
+
+<div class="div_body">
+            <a href="{%url 'services'%}"><button class="button_main"></button></a>
+            <a href="{%url 'OneWindow'%}"><button class="button_main"></button></a>
+            <a href="{%url 'tariff'%}"><button class="button_main"></button></a>
+            <a href="{%url 'video'%}"><button class="button_main"></button></a>
+</div>
+
+
+</body>
+</html>
