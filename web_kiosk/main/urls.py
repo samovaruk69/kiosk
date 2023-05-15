@@ -38,7 +38,7 @@ urlpatterns = [
     path('OneWindow/Document_forms/Ordinances/', views.Ordinances_home, name='Ordinances'),
     path('OneWindow/Document_forms/Others/', views.Others_home, name='Others'),
     path('OneWindow/Document_forms/Resolutions/', views.Resolutions_home, name='Resolutions'),
-
+    path('OneWindow/Document_forms/Video/', views.Video_home, name='Video'),
 ]
 
 if settings.DEBUG:

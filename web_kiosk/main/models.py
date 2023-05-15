@@ -23,8 +23,8 @@ class Video_OT(models.Model):
         return self.title
 
     class Meta:
-        verbose_name = 'Видео ОТ'
-        verbose_name_plural = 'Видео ОТ'
+        verbose_name = 'Видеоинструктажи'
+        verbose_name_plural = 'Видеоинструктажи'
 
 
 class Procedure_and_time_limits(models.Model):
@@ -228,5 +228,17 @@ class Resolutions(models.Model):
         verbose_name = 'Постановления'
         verbose_name_plural = 'Постановления'
 
+
+class Video(models.Model):
+    title = models.CharField('Название', max_length=150)
+    video_ot = models.FileField('Файл', upload_to='video/')
+    times = models.DateField('Дата публикации')
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = 'Видео'
+        verbose_name_plural = 'Видео'
 # Create your models here.
 

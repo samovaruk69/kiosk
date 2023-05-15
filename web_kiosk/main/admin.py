@@ -26,7 +26,7 @@ admin.site.register(Laws)
 admin.site.register(Ordinances)
 admin.site.register(Others)
 admin.site.register(Resolutions)
-
+admin.site.register(Video)
 
 
 # Register your models here.

@@ -96,3 +96,7 @@ def Others_home(request):
 def Resolutions_home(request):
     data = Resolutions.objects.all()
     return render(request,'main/OneWindow/list_of_documents/Resolutions.html', {'data': data})
+
+def Video_home(request):
+    data = Video.objects.all()
+    return render(request,'main/OneWindow/list_of_documents/Video.html', {'data': data})
